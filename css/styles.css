@@ -408,7 +408,7 @@ h1, h2, h3, h4 {
     box-shadow: var(--shadow-lg);
     width: 100%;
     object-fit: cover;
-    max-height: 380px;
+    max-height: 437px;
 }
 
 .team-member h3 {
