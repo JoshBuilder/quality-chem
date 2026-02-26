@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Quality Chem & Consulting Corp</title>
+    <meta name="description" content="Get in touch with Quality Chem & Consulting Corp. Request a quote, ask about custom blending, or reach us at our Melbourne, FL facility.">
+    <link rel="icon" href="images/QCC icon.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/Quality Chem & Consulting Corp logo.png" alt="Quality Chem & Consulting Corp">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- CONTACT FORM -->
+                <div>
+                    <h2 style="margin-bottom: 4px;">Send Us a Message</h2>
+                    <p style="color: var(--gray); margin-bottom: 24px;">Fill out the form below and we'll get back to you as soon as possible.</p>
+
+                    <!--
+                        NOTE: Replace YOUR_FORM_ID below with your actual Formspree form ID.
+                        Sign up free at https://formspree.io, create a form pointed at
+                        contact@qualitychemusa.com, and paste the ID here.
+                    -->
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/xpqjbqeg" method="POST">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+                        <label for="phone">Phone <span style="font-weight: 400; color: var(--gray);">(optional)</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="(321) 555-1234">
+
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select a subject...</option>
+                            <option value="Product Inquiry">Product Inquiry</option>
+                            <option value="Custom Blending Request">Custom Blending Request</option>
+                            <option value="Quote Request">Quote Request</option>
+                            <option value="General Question">General Question</option>
+                            <option value="Other">Other</option>
+                        </select>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+
+                    <div id="form-success" class="form-success">
+                        <h3>Thank you!</h3>
+                        <p>Your message has been sent. We'll get back to you shortly.</p>
+                    </div>
+                </div>
+
+                <!-- CONTACT INFO -->
+                <div>
+                    <div class="contact-info-block">
+                        <h3>Our Location</h3>
+                        <p>
+                            Quality Chem & Consulting Corp LLC<br>
+                            7655 Progress Cir., Suite D<br>
+                            West Melbourne, FL 32904
+                        </p>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+13215551234">(321) 555-1234</a></p>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <h3>Email</h3>
+                        <p><a href="mailto:contact@qualitychemusa.com">contact@qualitychemusa.com</a></p>
+                    </div>
+
+                    <div class="contact-info-block">
+                        <h3>Business Hours</h3>
+                        <p>
+                            Monday &ndash; Friday: 8:00 AM &ndash; 5:00 PM<br>
+                            Saturday &ndash; Sunday: Closed
+                        </p>
+                    </div>
+
+                    <!-- Google Maps embed -->
+                    <div class="map-embed">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.8!2d-80.6684!3d28.0654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88de11e0a6f0c0a7%3A0x0!2s7655+Progress+Cir+West+Melbourne+FL+32904!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Quality Chem location on Google Maps">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <img src="images/Quality Chem & Consulting Corp logo.png" alt="QCC Logo" class="footer-logo">
+                <p>Proprietary Products & Custom Blending</p>
+                <p>Serving customers nationwide from Melbourne, FL.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>7655 Progress Cir., Suite D<br>West Melbourne, FL 32904</p>
+                <p><a href="tel:+13215551234">(321) 555-1234</a></p>
+                <p><a href="mailto:contact@qualitychemusa.com">contact@qualitychemusa.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Quality Chem & Consulting Corp LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
