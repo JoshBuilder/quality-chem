@@ -433,6 +433,99 @@ h1, h2, h3, h4 {
     margin-top: 32px;
 }
 
+/* ===== ACCORDION (PRODUCTS) ===== */
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.accordion-item {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    background: var(--white);
+    border: none;
+    cursor: pointer;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--blue-dark);
+    font-family: inherit;
+    transition: background var(--transition);
+}
+
+.accordion-header:hover {
+    background: var(--blue-light);
+}
+
+.accordion-item.active .accordion-header {
+    background: var(--blue-primary);
+    color: var(--white);
+}
+
+.accordion-arrow {
+    font-size: 0.75rem;
+    transition: transform var(--transition);
+}
+
+.accordion-item.active .accordion-arrow {
+    transform: rotate(180deg);
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.accordion-item.active .accordion-body {
+    max-height: 600px;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+.product-table thead th {
+    background: var(--off-white);
+    padding: 12px 24px;
+    text-align: left;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.product-table tbody td {
+    padding: 14px 24px;
+    border-top: 1px solid var(--gray-light);
+    font-size: 0.95rem;
+    color: var(--text-body);
+}
+
+.product-table tbody td:first-child {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.product-table tbody tr:hover {
+    background: var(--blue-light);
+}
+
 /* ===== CONTACT PAGE ===== */
 .contact-grid {
     display: grid;
@@ -592,8 +685,6 @@ h1, h2, h3, h4 {
     height: 40px;
     width: auto;
     margin-bottom: 16px;
-    filter: brightness(0) invert(1);
-    opacity: 0.8;
 }
 
 .footer-bottom {

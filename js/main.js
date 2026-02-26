@@ -23,6 +23,25 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Product accordion toggle
+    var accordionHeaders = document.querySelectorAll('.accordion-header');
+    accordionHeaders.forEach(function (header) {
+        header.addEventListener('click', function () {
+            var item = this.parentElement;
+            var isActive = item.classList.contains('active');
+
+            // Close all items
+            document.querySelectorAll('.accordion-item').forEach(function (el) {
+                el.classList.remove('active');
+            });
+
+            // Open clicked item (unless it was already open)
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    });
+
     // Contact form handling (Formspree)
     var contactForm = document.getElementById('contact-form');
     if (contactForm) {
